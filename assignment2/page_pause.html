@@ -47,7 +47,7 @@
             position: relative;
         
         }
-        .bkg_day, .character-image {
+        .bkg_day, .character-image, .you-died {
             object-fit: fill;
         }
         .bkg_day {
@@ -68,8 +68,18 @@
             z-index: 1;
             transform: translateY(28.5%);
         }
+        .you-died {
+            width: 77%;
+            height: 120%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: translateY(7%) translateX(15%)
+            
+        }
         .dialogue-box {
-            transform: translateY(150%);
+            transform: translateY(200%);
             font-size: 1.5em;
             color: #d63384;
             background: #ffe4ec;
@@ -82,7 +92,7 @@
             text-align: center;
         }
         .choices {
-            transform: translateY(100%);
+            transform: translateY(200%);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -112,12 +122,11 @@
         <div class="character-box"></div>
         <div class="background-container">
             <img id="bkg" src="/assignment2/images/Day_BKG.png" alt="day" class="bkg_day">
-            <img id="wah" src="/assignment2/images/mads.png" alt="wahhh" class="character-image">
+            <img id="n" src="/assignment2/images/confused.png" alt="n" class="character-image">
         </div>
-        <div class="dialogue-box">"I SWEAR TO GOD IM GOING TO PUMMEL YOU, SHUT UP."</div>
+        <div class="dialogue-box">"..."Berry stared at you for a few moments</div>
         <div class="choices">
-            <a href="/assignment2/page08.html">..........ok fine O_O</a>
-            <a href="/assignment2/page_THE END.html">NO YOU WONT, NO BALLS</a>
+            <a href="/assignment2/page10.html">...?</a>
         </div>
     </div>
 </body>
