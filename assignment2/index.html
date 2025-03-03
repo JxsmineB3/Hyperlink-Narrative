@@ -4,6 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attachment</title>
+    <input type="button" value="Click me to play background music" onclick="document.getElementById('myAudio').play()">
+
+<audio id="myAudio">
+  <source src="sound/Twinkling Shooting Star(Cute chiptune8bit music).mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+    <style>
+        body {
+            font-family: Courier, monospace;
+            background-color: #f4d1e0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .game-container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        .character-box {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #d63384;
+        }
+        /* Background container */
+        .background-container {
+            position: static;
+            width: 1000%;
+            height: 1000px; /* Adjust to fit the scene */
+        }
+        .bkg_day, .character-image {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            object-fit: fill; /* Keeps the aspect ratio */
+        
+}
+        .character-image {
+            z-index: 2; /* Character appears on top */
+        }
+        .dialogue-box {
+            font-size: 1.2em;
+            color: #d63384;
+            background: #ffe4ec;
+            padding: 15px;
+            border-radius: 2%;
+            margin-top: 12px;
+            position: 10px;;
+        }
+        .choices a {
+            display: block;
+            background: #ff85a2;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px auto;
+            border-radius: 5px;
+            width: 200px;
+            font-size: 1em;
+            position: relative;
+            z-index: 3;
+        }
+        .choices a:hover {
+            background: #ff5c8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="character-box">Attachment</div>
+
+        <!-- Background container -->
+        <div class="background-container">
+            <img src="images/Day_BKG.png" alt="day" class="bkg_day">
+            <img src="images/neutral_openmouth.png" alt="Neutral" class="character-image">
+        </div>
+
+        <div class="dialogue-box">"Hello, It's a wonder to meet you!"</div>
+        <div class="choices">
+            <a href="page01.html">Same here!</a>
+            <a href="page02.html">...who are you?</a>
+            <a href="page03.html">Ew.. what are you??</a>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attachment</title>
     <style>
         body {
             font-family:Courier, monospace;
