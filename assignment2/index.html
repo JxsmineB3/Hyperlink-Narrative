@@ -6,10 +6,23 @@
     <title>Attachment</title>
     <input type="button" value="Click me to play background music" onclick="document.getElementById('myAudio').play()">
 
-    <audio id="myAudio">
-        <source src="sound/Twinkling Shooting Star(Cute chiptune8bit music).mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="myAudio" loop>
+    <source src="sound/Twinkling Shooting Star(Cute chiptune8bit music).mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("myAudio");
+
+        function playAudio() {
+            audio.play().catch(error => console.error("Autoplay failed:", error));
+            document.removeEventListener("click", playAudio);
+        }
+
+        document.addEventListener("click", playAudio);
+    });
+</script>
     <style>
         html, body {
             height: 100%;
