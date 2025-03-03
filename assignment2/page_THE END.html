@@ -47,7 +47,7 @@
             position: relative;
         
         }
-        .bkg_day, .character-image {
+        .bkg_day, .character-image, .you-died {
             object-fit: fill;
         }
         .bkg_day {
@@ -67,6 +67,16 @@
             left: 100%;
             z-index: 1;
             transform: translateY(28.5%);
+        }
+        .you-died {
+            width: 77%;
+            height: 120%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: translateY(7%) translateX(15%)
+            
         }
         .dialogue-box {
             transform: translateY(200%);
@@ -111,12 +121,13 @@
     <div class="game-container">
         <div class="character-box"></div>
         <div class="background-container">
+            <img id="filter" src="/assignment2/images/wasted.png" alt="filter" class="you-died">
             <img id="bkg" src="/assignment2/images/Day_BKG.png" alt="day" class="bkg_day">
-            <img id="n" src="/assignment2/images/neutral.png" alt="n" class="character-image">
+            <img id="grr" src="/assignment2/images/mads.png" alt="grrr" class="character-image">
         </div>
-        <div class="dialogue-box">"......"</div>
+        <div class="dialogue-box">"Wasted."</div>
         <div class="choices">
-            <a href="/assignment2/page02.html">uh..</a>
+            <a href="/assignment2/restart.html">restart</a>
         </div>
     </div>
 </body>
