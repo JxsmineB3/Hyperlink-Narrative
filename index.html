@@ -3,24 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attachment</title>
-    <audio id="myAudio" loop>
-    <source src="assignment2/sound/Twinkling Shooting Star(Cute chiptune8bit music).mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const audio = document.getElementById("myAudio");
-
-        function playAudio() {
-            audio.play().catch(error => console.error("Autoplay failed:", error));
-            document.removeEventListener("click", playAudio);
-        }
-
-        document.addEventListener("click", playAudio);
-    });
-</script>
+    <title>Attachments</title>
     <style>
         html, body {
             height: 100%;
@@ -32,13 +15,20 @@
             background-color: #f4d1e0;
             text-align: center;
         }
+        .character-box {
+            position: relative;
+            font-size: 5.5em;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: #d63384;
+            z-index: 3;
+        }
         .game-container {
             width: 60%;
             margin: 15px auto;
             background: white;
             padding: 20px;
             border-radius: 5%;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px rgba(189, 29, 29, 0.2);
             position: relative;
             overflow: auto;
             display: flex;
@@ -47,11 +37,7 @@
             /* Ensure the container does not exceed viewport height */
             max-height: calc(100vh - 30px);
         }
-        .character-box {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #d63384;
-        }
+        
         /* Background container */
         .background-container {
             width: 100%;
@@ -59,6 +45,7 @@
             flex-direction: column;
             align-items: center;
             position: relative;
+        
         }
         .bkg_day, .character-image {
             object-fit: fill;
@@ -70,7 +57,7 @@
             top: 0;
             left: 0;
             z-index: 0;
-            transform: translateY(-8%) translateX(15%)
+            transform: translateY(7%) translateX(15%)
             
         }
         .character-image {
@@ -79,11 +66,11 @@
             top: 0;
             left: 100%;
             z-index: 1;
-            transform: translateY(-0%);
+            transform: translateY(28.5%);
         }
         .dialogue-box {
-            transform: translateY(-15px);
-            font-size: 1.2em;
+            transform: translateY(200%);
+            font-size: 1.5em;
             color: #d63384;
             background: #ffe4ec;
             padding: 15px;
@@ -91,11 +78,11 @@
             margin-top: 12px;
             position: relative;
             z-index: 2;
-            width: 80%;
+            width: 74%;
             text-align: center;
         }
         .choices {
-            transform: translateY(-7px);
+            transform: translateY(95%);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -120,8 +107,9 @@
     </style>
 </head>
 <body>
+    <div class="character-box">Attachments</div>
     <div class="game-container">
-        <div class="character-box">Attachment</div>
+        <div class="character-box"></div>
         <div class="background-container">
             <img id="bkg" src="/assignment2/images/Day_BKG.png" alt="day" class="bkg_day">
             <img id="neutral" src="/assignment2/images/neutral_openmouth.png" alt="Neutral" class="character-image">
