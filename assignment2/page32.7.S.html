@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attachments</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Courier, monospace;
+            background-color: #f4d1e0;
+            text-align: center;
+        }
+        .character-box {
+            position: relative;
+            font-size: 5.5em;
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            color: #d63384;
+            z-index: 3;
+        }
+        .game-container {
+            width: 60%;
+            margin: 15px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5%;
+            box-shadow: 0px 0px 10px rgba(189, 29, 29, 0.2);
+            position: relative;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Ensure the container does not exceed viewport height */
+            max-height: calc(100vh - 30px);
+        }
+        
+        /* Background container */
+        .background-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        
+        }
+        .bkg_day, .character-image {
+            object-fit: fill;
+        }
+        .bkg_day {
+            width: 77%;
+            height: 120%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            transform: translateY(7%) translateX(15%)
+            
+        }
+        .character-image {
+            max-height: 70vh;
+            width: auto;
+            top: 0;
+            left: 100%;
+            z-index: 1;
+            transform: translateY(28.5%);
+        }
+        .sunset {
+            width: 77%;
+            height: 120%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: translateY(7%) translateX(15%)
+            
+        }
+        .dialogue-box {
+            transform: translateY(100px);
+            font-size: 1.5em;
+            color: #d63384;
+            background: #ffe4ec;
+            padding: 15px;
+            border-radius: 2%;
+            margin-top: 12px;
+            position: relative;
+            z-index: 2;
+            width: 74%;
+            text-align: center;
+        }
+        .choices {
+            transform: translateY(100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .choices a {
+            display: block;
+            background: #ff85a2;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px auto;
+            border-radius: 5px;
+            width: 200px;
+            font-size: 1em;
+            position: relative;
+            z-index: 3;
+        }
+        .choices a:hover {
+            background: #ff5c8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="character-box">Attachments</div>
+    <div class="game-container">
+        <div class="character-box"></div>
+        <div class="background-container">
+            <img id="filter" src="../images/night_filter.png" alt="filter" class="sunset">
+            <img id="bkg" src="../images/Night_BKG.png" alt="day" class="bkg_day">
+            <img id="grr" src="../images/last glance.png" alt="grrr" class="character-image">
+        </div>
+        <div class="dialogue-box">"Goodbye User."</div>
+        <div class="choices">
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            <a href="Page40_S.html">Goodbye<now class=""></now></a>
+            
+        </div>
+    </div>
+</body>
+</html>
