@@ -47,7 +47,7 @@
             position: relative;
         
         }
-        .bkg_day, .character-image {
+        .bkg_day, .character-image,.arm-up {
             object-fit: fill;
         }
         .bkg_day {
@@ -68,8 +68,17 @@
             z-index: 1;
             transform: translateY(28.5%);
         }
+        .arm-up {
+            width: 50%;
+            height: 110%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform: translateY(100px) translateX(150px)
+        }
         .dialogue-box {
-            transform: translateY(150px);
+            transform: translateY(100px);
             font-size: 1.5em;
             color: #d63384;
             background: #ffe4ec;
@@ -111,6 +120,7 @@
     <div class="game-container">
         <div class="character-box"></div>
         <div class="background-container">
+            <img id="arm" src="../images/arm_up.png" alt="arm" class="arm-up">
             <img id="bkg" src="../images/Day_BKG.png" alt="day" class="bkg_day">
             <img id="n" src="../images/neutral_openmouth.png" alt="n" class="character-image">
         </div>
