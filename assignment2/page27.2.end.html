@@ -47,7 +47,7 @@
             position: relative;
         
         }
-        .bkg_day, .character-image {
+        .bkg_day, .character-image, .you-died {
             object-fit: fill;
         }
         .bkg_day {
@@ -65,27 +65,19 @@
             width: auto;
             top: 0;
             left: 100%;
+            opacity:0%;
             z-index: 1;
             transform: translateY(28.5%);
         }
-        .sunset {
+        .you-died {
             width: 77%;
             height: 120%;
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 3;
+            z-index: 2;
             transform: translateY(7%) translateX(15%)
             
-        }
-        .arm-up {
-            width: 50%;
-            height: 110%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index:2;
-            transform: translateY(100px) translateX(250px)
         }
         .dialogue-box {
             transform: translateY(100px);
@@ -96,7 +88,7 @@
             border-radius: 2%;
             margin-top: 12px;
             position: relative;
-            z-index: 3;
+            z-index: 2;
             width: 74%;
             text-align: center;
         }
@@ -130,14 +122,13 @@
     <div class="game-container">
         <div class="character-box"></div>
         <div class="background-container">
-            <img id="filter" src="../images/sunset_filter.png" alt="filter" class="sunset">
-            <img id="arm" src="../images/arm_up.png" alt="arm" class="arm-up">
+            <img id="filter" src="../images/ded.png" alt="filter" class="you-died">
             <img id="bkg" src="../images/Sunset_BKG.png" alt="day" class="bkg_day">
-            <img id="grr" src="../images/shy.png" alt="grrr" class="character-image">
+            <img id="grr" src="../images/annoy.png" alt="grrr" class="character-image">
         </div>
-        <div class="dialogue-box">"Mhm."</div>
+        <div class="dialogue-box">You got the "GHOSTED ENDING" man you suck at this</div>
         <div class="choices">
-            <a href="page26.html">Alright.<now class=""></now></a>
+            <a href="../index.html">restart</a>
         </div>
     </div>
 </body>
