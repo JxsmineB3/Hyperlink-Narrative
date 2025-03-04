@@ -68,6 +68,25 @@
             z-index: 1;
             transform: translateY(28.5%);
         }
+        .sunset {
+            width: 77%;
+            height: 120%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            transform: translateY(7%) translateX(15%)
+            
+        }
+        .arm-up {
+            width: 50%;
+            height: 110%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index:2;
+            transform: translateY(100px) translateX(250px)
+        }
         .dialogue-box {
             transform: translateY(100px);
             font-size: 1.5em;
@@ -77,7 +96,7 @@
             border-radius: 2%;
             margin-top: 12px;
             position: relative;
-            z-index: 2;
+            z-index: 3;
             width: 74%;
             text-align: center;
         }
@@ -111,12 +130,14 @@
     <div class="game-container">
         <div class="character-box"></div>
         <div class="background-container">
-            <img id="bkg" src="../images/Day_BKG.png" alt="day" class="bkg_day">
-            <img id="n" src="../images/annoy.png" alt="n" class="character-image">
+            <img id="filter" src="../images/sunset_filter.png" alt="filter" class="sunset">
+            <img id="arm" src="../images/arm_up.png" alt="arm" class="arm-up">
+            <img id="bkg" src="../images/Sunset_BKG.png" alt="day" class="bkg_day">
+            <img id="grr" src="../images/flushi.png" alt="grrr" class="character-image">
         </div>
-        <div class="dialogue-box">"......"</div>
+        <div class="dialogue-box">"Mhm."</div>
         <div class="choices">
-            <a href="page02.html">uh..</a>
+            <a href="page26.html">Alright.<now class=""></now></a>
         </div>
     </div>
 </body>
